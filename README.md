@@ -1,1 +1,1 @@
-# ConsoleProjects2
+This StudentScholarshipsProject have both Premetric and Postmetric Students can Apply for Scholarship and edit,view their detailes 
