@@ -45,7 +45,7 @@ public class LoginFile
             else
             {
                 System.out.println("Incorrect password, please try again.");
-            
+
             }
         }
     }
@@ -96,7 +96,7 @@ public class LoginFile
             if (captcha.equals(generatedCaptcha))
             {
                 System.out.println("**********.Login successful! Welcome to the Student Scholarship Portal.*********");
-                HomeFile.homePage(); 
+                HomeFile.homePage();
                 break; // Exit the loop if captcha is correct
 
             }
@@ -128,7 +128,7 @@ public class LoginFile
                 switch(choose)
                 {
                     case 1:System.out.println("UserID: "+ showUserID);
-                    		System.out.println("");                          
+                    		System.out.println("");
                             break running;
                     case 2:System.out.println("Password: "+ showPassWord);
                     		System.out.println("");
@@ -143,6 +143,25 @@ public class LoginFile
             }
     }
 
+    public static void CheckUserPhoneNumber() throws IOException
+    {
+      while (true)
+      {
+          System.out.println("");
+          System.out.println("Enter Your PhoneNumber :");
+          String userPhoneNum = input.nextLine();
+          if (userid.equals(ReadStudentDetailsFromDatabase.profilePhoneNumber))
+          {
+              break; // Exit the loop if user PhoneNumber is valid
+          }
+          else
+          {
+              System.out.println();
+              System.out.println("incorrect PhoneNumber");
+          }
+      }
+    }
+
     public static void loginPage() throws IOException
     {
         ReadStudentDetailsFromDatabase.readUserId();
@@ -150,8 +169,8 @@ public class LoginFile
         System.out.println("Note: If in Case Forget Your UserId and Password You can Retrive it.....");
         System.out.println("");
 
-        while (true) 
-        {    
+        while (true)
+        {
             System.out.println("Enter R for Retrive detailes OR else, Enter C for continue If you Remember all detailes");
             String choice=input.nextLine();
             if (choice.equalsIgnoreCase("R"))
@@ -160,6 +179,7 @@ public class LoginFile
             }
             else if (choice.equalsIgnoreCase("C"))
             {
+                CheckUserPhoneNumber();
                 CheckUserID();
                 CheckPassWord();
                 CheckGenerateCaptcha();

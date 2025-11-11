@@ -12,7 +12,7 @@ public class ReadStudentDetailsFromDatabase
 	public static String profilePhoneNumber;
 	public static String name;
 	public static String age;
-    public static String gender;
+  public static String gender;
 	public static String address;
 	public static String email;
 	public static String phone_number;
