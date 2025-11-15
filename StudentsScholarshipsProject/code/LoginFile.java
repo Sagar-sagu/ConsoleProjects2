@@ -166,6 +166,7 @@ public class LoginFile
     {
         ReadStudentDetailsFromDatabase.readUserId();
         ReadStudentDetailsFromDatabase.readPassword();
+        ReadStudentDetailsFromDatabase.readProfilePhoneNumber();
         System.out.println("Note: If in Case Forget Your UserId and Password You can Retrive it.....");
         System.out.println("");
 
