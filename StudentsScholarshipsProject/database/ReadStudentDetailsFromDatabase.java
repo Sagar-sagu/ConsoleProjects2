@@ -1,11 +1,13 @@
 package database;
 
+//imported dependencies packages
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class ReadStudentDetailsFromDatabase
 {
+	//global variabl
 	public static String UserId;
 	public static String Password;
 	public static String profileName;

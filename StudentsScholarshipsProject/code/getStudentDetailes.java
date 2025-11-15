@@ -1,11 +1,13 @@
 package code;
 
+//imported dependencies packages
 import java.io.IOException;
 import java.util.Scanner;
 import database.WriteStudentDetailesToDatabase;
 
 public class getStudentDetailes
 {
+  //global variabl
     public static String name;
     public static String age;
     public static String gender;
@@ -61,11 +63,11 @@ public class getStudentDetailes
         {
             System.out.println("Enter your phone number:");
             phonenum = input.nextLine();
-            
+
             if (phonenum.length()==10)
             {
                 break;
-            }    
+            }
             else
             {
                 System.out.println("Enter valid phonenumber:");
@@ -146,4 +148,3 @@ public class getStudentDetailes
         WriteStudentDetailesToDatabase.writeBranchName();
     }
 }
-

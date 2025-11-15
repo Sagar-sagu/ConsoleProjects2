@@ -1,10 +1,12 @@
 package code;
 
+//imported dependencies packages
 import java.io.IOException;
 import java.util.Scanner;
 
 public class HomeFile
 {
+  //global variabl
     public static Scanner input=new Scanner(System.in);
 
     public static void homePage() throws IOException

@@ -1,11 +1,13 @@
 package code;
 
+//imported dependencies packages
 import java.io.IOException;
 import java.util.Scanner;
 import database.WriteStudentDetailesToDatabase;
 
 public class ApplyForScholarship
 {
+  //global variabl
     public static String scanChoice;
     public static Scanner input = new Scanner(System.in);
 
@@ -23,7 +25,7 @@ public class ApplyForScholarship
 			System.out.println("3.BankDetailes");
 			System.out.println("4.Back");
 			System.out.println("");
-           
+
 			System.out.println("enter number (1,2,3,4):");
 			int num = input.nextInt();
 			switch (num)
@@ -48,7 +50,7 @@ public class ApplyForScholarship
         System.out.println("");
         System.out.println(" ********* APPLY FOR POST-METRIC SCHOLARSHIP ******** ");
         System.out.println("");
-        
+
         running:
 		while (true)
 		{
@@ -58,7 +60,7 @@ public class ApplyForScholarship
 	        System.out.println("3.BankDetailes");
 	        System.out.println("4.Back");
 	        System.out.println("");
-      
+
 			System.out.println("enter number (1,2,3,4):");
 			int num = input.nextInt();
 			switch (num)
@@ -85,7 +87,7 @@ public class ApplyForScholarship
         System.out.println("");
         System.out.println("Please select the type of scholarship you want to apply for:");
         System.out.println("");
-        
+
         running:
         while (true)
         {

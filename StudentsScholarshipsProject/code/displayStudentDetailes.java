@@ -1,11 +1,12 @@
 package code;
 
+//imported dependencies packages
 import database.ReadStudentDetailsFromDatabase;
 import java.io.IOException;
 
 public class displayStudentDetailes
 {
-  public static void DisplayPersnolDetailes() throws IOException  
+  public static void DisplayPersnolDetailes() throws IOException
   {
       ReadStudentDetailsFromDatabase.readName();
       ReadStudentDetailsFromDatabase.readAge();
@@ -123,12 +124,12 @@ public class displayStudentDetailes
       else
       {
         System.out.println("View Scholarship Status...");
-        System.out.println("");     
+        System.out.println("");
         if (checkPreOrPost.equals("1") || checkPreOrPost.equals("2"))
         {
             System.out.println("Scholarship Status: Approved");
         }
-      
+
       }
   }
 }

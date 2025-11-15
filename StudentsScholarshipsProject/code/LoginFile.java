@@ -1,5 +1,6 @@
 package code;
 
+//imported dependencies packages
 import database.ReadStudentDetailsFromDatabase;
 import java.io.IOException;
 import java.util.Random;
@@ -8,6 +9,7 @@ import java.util.Scanner;
 
 public class LoginFile
 {
+    //global variabl
     public static Scanner input=new Scanner(System.in);
 
     public static void CheckUserID() throws IOException

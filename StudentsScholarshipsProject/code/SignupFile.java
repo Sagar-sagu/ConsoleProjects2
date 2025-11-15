@@ -1,5 +1,6 @@
 package code;
 
+//imported dependencies packages
 import database.WriteStudentDetailesToDatabase;
 import java.io.IOException;
 import java.time.Year;
@@ -8,6 +9,7 @@ import java.util.Scanner;
 
 public class SignupFile
 {
+    
     public static String genuserid;
     public static String password;
     public static String name;
@@ -44,7 +46,7 @@ public class SignupFile
 
     public static void getPassword() throws IOException
     {
-      
+
         System.out.println("");
         System.out.println("Note: you Create Atleast 8 Character and Maximum 15 Character");
         System.out.println("Create Password");

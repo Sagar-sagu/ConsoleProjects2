@@ -1,3 +1,4 @@
+//imported dependencies packages
 import code.LoginFile;
 import code.SignupFile;
 import java.io.IOException;
@@ -7,8 +8,8 @@ public class Main
 {
     public static void main(String[] args) throws IOException
     {
-    
         Scanner input = new Scanner(System.in);
+        //Entry point of This Project
         System.out.println(" ********* WELCOME TO STUDENT SCHOLERSHIPS  PORTEL ******** ");
         while (true) // Assuming you have a condition to keep the loop running
         {

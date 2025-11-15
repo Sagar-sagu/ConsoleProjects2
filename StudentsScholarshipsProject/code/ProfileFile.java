@@ -1,5 +1,6 @@
 package code;
 
+//imported dependencies packages
 import java.io.IOException;
 import database.*;
 import java.util.Scanner;
@@ -36,7 +37,7 @@ public class ProfileFile
                     System.out.println("1.Name");
                     System.out.println("2.Password");
                     System.out.println("3.MobileNumber");
-                    System.out.println("4.Back");                
+                    System.out.println("4.Back");
                     System.out.println("Enter your choice (1/2/3/4)");
                     int choose=scan.nextInt();
 
